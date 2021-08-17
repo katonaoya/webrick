@@ -10,7 +10,7 @@ server = WEBrick::HTTPServer.new({
 
 server.mount_proc("/time") do |req, res|
   # レスポンス内容を出力
-  body = "#{Time.now}"
+  body = "<html><body>#{Time.now}</body></html>"
   res.status = 200
   res['Content-Type'] = 'text/html'
   res.body = body
