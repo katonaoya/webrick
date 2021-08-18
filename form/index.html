@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+  </head>
+  <body>
+    <h2>GETで送る
+    </h2>
+    <form action="http://localhost:8000/form_get" method="get">
+      <ul>
+       <li>
+         <label for="name">Name:</label>
+         <input type="text" id="name" name="username" />
+       </li>
+       <li>
+         <label for="age">E-mail:</label>
+         <input type="text" id="age" name="userage" />
+       </li>
+       <li class="button">
+        <button type="submit">送信</button>
+       </li>
+      </ul>
+     </form>
+    <h2>POSTで送る
+    </h2>
+    <form action="http://localhost:8000/form_post" method="post">
+      <ul>
+       <li>
+         <label for="name">Name:</label>
+         <input type="text" id="name" name="username" />
+       </li>
+       <li>
+         <label for="age">E-mail:</label>
+         <input type="text" id="age" name="userage" />
+       </li>
+       <li class="button">
+        <button type="submit">送信</button>
+       </li>
+      </ul>
+     </form>
+  </body>
+</html>
