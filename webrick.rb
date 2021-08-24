@@ -27,7 +27,7 @@ server.mount_proc("/form_get") do |req, res|
   res.status = 200
   res['Content-Type'] = 'text/html'
   res.body = body
-end
+end   
 
 server.mount_proc("/form_post") do |req, res|
   # レスポンス内容を出力
